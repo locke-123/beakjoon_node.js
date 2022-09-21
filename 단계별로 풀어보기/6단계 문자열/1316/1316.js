@@ -6,7 +6,7 @@ let N = parseInt(input[0]);
 input.shift();
 let ans = 0;
 
-for(let i=0;i<N;i++){
+for(let i=0;i<N;i++){ //input에 대해서는 i in range 쓰지 않기
     if(groupWord(input[i]) === true) {
         ans++;
     }
@@ -16,7 +16,8 @@ console.log(ans);
 
 function groupWord(str) {
     let charList = [];
-
+        //let i in str (객체 index 반환)해도 가능
+        //let i of str은 불가능(let 빼도 가능, 배열의 값을 가져오기 때문에 X)
     for(let i=0; i<str.length; i++){ //length 스펠링 틀려서 30분 삽질..
         if(charList.indexOf(str[i]) === -1){//list에 없으면 list에 넣기
             charList.push(str[i]);
