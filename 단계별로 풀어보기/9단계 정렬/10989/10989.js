@@ -1,3 +1,8 @@
+/*
+*
+10989는 NODE.js로 풀 수 없다. (메모리 초과)
+*
+*/
 const fs = require('fs');
 let input = fs.readFileSync('example.txt').toString().trim().split('\n').map(Number);
 //let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(Number);
@@ -32,4 +37,4 @@ for(i of input){
     count[i]--; //그리고 해당하는 누적합 배열은 -1
 }
 
-//console.log(result.join('\n'));
+console.log(result.join('\n'));
