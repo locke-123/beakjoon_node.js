@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\단계별로 풀어보기\\16단계 백트래킹\\15650\\15650.js"
+            "program": "${workspaceFolder}\\단계별로 풀어보기\\16단계 백트래킹\\14889\\14889.js"
         }
     ]
 }
