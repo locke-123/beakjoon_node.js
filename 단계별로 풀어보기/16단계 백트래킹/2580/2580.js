@@ -1,7 +1,7 @@
 const fs = require('fs');
 //9X9
-//let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(s => s.trim());
-let input = fs.readFileSync('example.txt').toString().trim().split('\n').map(s => s.trim());
+let input = fs.readFileSync('/dev/stdin').toString().trim().split('\n').map(s => s.trim());
+//let input = fs.readFileSync('example.txt').toString().trim().split('\n').map(s => s.trim());
 let matrix = new Array(9);
 for(let i=0; i<9; i++){
     matrix[i] = input[i].split(' ').map(Number);
